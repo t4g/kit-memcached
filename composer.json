@@ -1,0 +1,26 @@
+{
+    "name": "t4g/kit-memcached",
+    "description": "Kit style wrap for class memcached",
+    "version":"1.0.0",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Younge",
+            "email": "dev@anvil.za.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "config": {
+        "vendor-dir": "vendor",
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {
+            "Kit\\DB\\Memcached":  "src/"
+        }
+    }
+
+}
