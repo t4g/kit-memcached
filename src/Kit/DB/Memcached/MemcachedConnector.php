@@ -23,7 +23,7 @@ namespace Kit\DB\Memcached {
          * @param $port
          * @param $priory
          */
-        function __construct($ip, $port, $priory=0)
+        function __construct($ip, $port, $priory=100)
         {
             $this->_servers[] = array($ip, $port, $priory);
         }

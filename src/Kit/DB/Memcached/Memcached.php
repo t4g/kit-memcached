@@ -67,9 +67,12 @@ class Memcached extends \Memcached {
         // Void: Apply Connector container to base Memcached
         $this->applyConnector($this, self::$_instConnector);
 
-        return new MemcachedConfiguration();
+        // set the key prefix.
+        $this->setOptions(array( self::OPT_PREFIX_KEY => self::$_prefix));
 
     }
+
+
 
 
     /**
@@ -78,7 +81,7 @@ class Memcached extends \Memcached {
      * @param MemcachedBase      $memcached
      * @param MemcachedConnector $connector
      */
-    private function applyConnector(\Memcached &$memcached, MemcachedConnector &$connector)
+    private function applyConnector(Memcached &$memcached, MemcachedConnector &$connector)
     {
         foreach($connector->getServersArray() AS $addr)
 
