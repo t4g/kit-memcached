@@ -1,7 +1,7 @@
 {
     "name": "t4g/kit-memcached",
     "description": "Kit style wrap for class memcached",
-    "version":"1.0.0",
+    "version":"1.2.0",
     "minimum-stability": "dev",
     "license": "MIT",
     "authors": [
